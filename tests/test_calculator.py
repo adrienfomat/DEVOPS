@@ -1,8 +1,10 @@
 """Tests for calculator module."""
 
-import pytest
-from mathutils import calculator
 import sys
+
+import pytest
+
+from mathutils import calculator
 
 
 def test_add():
