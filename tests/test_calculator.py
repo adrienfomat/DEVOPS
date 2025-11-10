@@ -47,7 +47,9 @@ def test_square_root():
 
 
 def test_square_root_negative():
-    with pytest.raises(ValueError, match="Cannot calculate square root of negative number"):
+    with pytest.raises(
+        ValueError, match="Cannot calculate square root of negative number"
+    ):
         calculator.square_root(-1)
 
 
