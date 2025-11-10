@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+mathutils/__init__.py
+mathutils/calculator.py
+mathutils_tp_cicd.egg-info/PKG-INFO
+mathutils_tp_cicd.egg-info/SOURCES.txt
+mathutils_tp_cicd.egg-info/dependency_links.txt
+mathutils_tp_cicd.egg-info/top_level.txt
+tests/test_calculator.py
