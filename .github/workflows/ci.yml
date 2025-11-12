@@ -41,7 +41,7 @@ jobs:
 
       # Analyse du code 
       - name: Lint with Flake8
-        run: flake8 .
+        run: flake8 mathutils tests
 
       # Lancement des tests et de la couverture
       - name: Test with pytest
