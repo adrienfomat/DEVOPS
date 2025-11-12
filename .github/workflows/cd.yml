@@ -37,10 +37,10 @@ jobs:
       - name: Check package
         run: twine check dist/* # Vérifie que les fichiers dans dist/ sont valides pour la publication
 
-      - name: Publish to GitHub Packages
+      - name: Publish to TestPyPI
        
         env:
           TWINE_USERNAME: __token__
-          TWINE_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
-          TWINE_REPOSITORY_URL: https://pypi.pkg.github.com/${{ github.repository }}
-        run: twine upload dist/*
+          TWINE_PASSWORD: ${{ secrets.TEST_PYPI_API_TOKEN }}
+        run: |
+          twine upload --repository-url https://test.pypi.org/legacy/ dist/*
