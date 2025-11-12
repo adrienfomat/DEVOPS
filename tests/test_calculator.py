@@ -1,7 +1,5 @@
 """Tests for calculator module."""
 
-import sys
-
 import pytest
 
 from mathutils import calculator
